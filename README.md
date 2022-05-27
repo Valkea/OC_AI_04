@@ -57,7 +57,7 @@ let's create a virtual environment and install the required Python libraries
 ```
 
 ### Finally,
-let's configure and run the virtual environment for Jypiter notebook
+let's configure and run the virtual environment for Jupyter notebook
 
 
 #### Install jupyter kernel for the virtual environment using the following command:
@@ -66,6 +66,12 @@ let's configure and run the virtual environment for Jypiter notebook
 >>> pip install ipykernel
 >>> python -m ipykernel install --user --name=venvP4
 ```
+
+#### Select the installed kernel
+
+In order to run the various notebooks, you will need to use the virtual environnement created above.
+So once the notebooks are opened (see below), prior to running it, follow this step:
+![alt text](medias/venv_selection.png)
 
 #### Run the jupyter notebooks
 
@@ -88,22 +94,6 @@ let's configure and run the virtual environment for Jypiter notebook
 ```bash
 >>> jupyter notebook Display_Scores.ipynb 
 ```
-
-#### Run the Voila notebook
-
-in order to run the interactive version of the notebook you can run the Voila version using the following command:
-```bash
->>> voila Voila.ipynb
-```
-
-and to run the KNN prediction prototype all alone without the rest of th EDA, run the following:
-```bash
->>> voila KNN-Prototype.ipynb
-```
-
-#### Select the installed kernel
-Click on the kernel and click change kernel you will be able to see the kernel you just created.
-![alt text](medias/venv_selection.png)
 
 #### Uninstalling the venv kernel
 Once done with the project, the kernel can be listed and removed using the following commands:
